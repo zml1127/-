@@ -1,22 +1,46 @@
 .shipinxuetang{
     .shipin_top{
             width:3.75rem;
-            // overflow: hidden;
-            background-color: pink;
+            height: 0.6rem;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            z-index: 110;
+            background-color: #fff;
             ul{
                 white-space: nowrap;
                 overflow: scroll;
+                // overflow-y: hidden;
+                // -webkit-scrollbar {display:none}
+                // -webkit-overflow-scrolling: touch;
+                padding-bottom: 0.2rem;
+                // ::-webkit-scrollbar {
+                //     width: 0px;
+                //     height: 1px;
+                // }
                 li{
                     display: inline-block;
                     height: 0.55rem;
-                    border-bottom: 1px solid #333;
                     line-height: 0.55rem;
                     padding: 0 0.11rem;
                     font-size: 0.1656rem;
-                    color: #313131;
+                    
                     font-weight: 200;
+                    a{
+                        color: #313131;
+                    }
+                    .shipin_active2{
+                        color: #000;
+                        border-bottom: 0.033rem solid #E98B71;
+                        padding-bottom: 0.02rem;
+                        font-weight: bold;
+                    }
                 }
+                .lastt{
+                    margin-right: 0.44rem;
+                } 
             }
+            
             .shipin_top_big{
                 position: absolute;
                 background-color: #fff;

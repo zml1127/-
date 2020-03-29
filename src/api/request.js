@@ -49,4 +49,44 @@ export const getJiQiaoConn = ()=>{
 export const getShiPin = ()=>{
     return axios.get("/hpb/education/getIndexByWeb?_t=1583388486956&csrfToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOjAsImV4cCI6MTc3MjU1NDM3MCwiaWF0IjoxNTgzMjUxOTcwfQ.OETc-w4A2NGY_CzLcsgVDK8Rps6U-om3NLzQm4t-2Kk")
 }
+// details页面视频页数据
+export const getDetails = (id)=>{
+    return axios.get("/hpb/education/getCourse?_t=1583423008108&csrfToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOjAsImV4cCI6MTc3MjU1NDM3MCwiaWF0IjoxNTgzMjUxOTcwfQ.OETc-w4A2NGY_CzLcsgVDK8Rps6U-om3NLzQm4t-2Kk&educationCourseId="+id)
+}
+// 学烘焙->视频学堂->蛋糕、面包吐司、面食等数据
+export const getScrollY =(id)=>{
+    return axios.get("/hpb/index/getIndexItem?_t=1583474708679&csrfToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOjAsImV4cCI6MTc3MjU1NDM3MCwiaWF0IjoxNTgzMjUxOTcwfQ.OETc-w4A2NGY_CzLcsgVDK8Rps6U-om3NLzQm4t-2Kk&categoryId="+id)
+}
+// 搜索关键字
+export const getSearchKeyWords = ()=>{
+    return axios.get("/hpb/keyword/detail?_t=1583478382100&csrfToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOjAsImV4cCI6MTc3MjU1NDM3MCwiaWF0IjoxNTgzMjUxOTcwfQ.OETc-w4A2NGY_CzLcsgVDK8Rps6U-om3NLzQm4t-2Kk")
+}
+// 根据keyword找到对应的数据列表
+export const getDataByKeyWords = (keyword)=>{
+    return axios.get("/hpb/search/getMoreRecipe?_t=1583480984632&csrfToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOjAsImV4cCI6MTc3MjU1NDM3MCwiaWF0IjoxNTgzMjUxOTcwfQ.OETc-w4A2NGY_CzLcsgVDK8Rps6U-om3NLzQm4t-2Kk&pageIndex=20&pageSize=10&keyword="+keyword+"=")
+}
+// 烘焙圈轮播图
+export const getQuanSwip = ()=>{
+    return axios.get("/hpb/feed/getCategory?_t=1583507083017&csrfToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOjAsImV4cCI6MTc3MjU1NDM3MCwiaWF0IjoxNTgzMjUxOTcwfQ.OETc-w4A2NGY_CzLcsgVDK8Rps6U-om3NLzQm4t-2Kk")
+}
+// 烘焙圈轮播图下方关键字
+export const getQuanKey = ()=>{
+    return axios.get("/hpb/community/randExpertNum?_t=1583507083192&csrfToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOjAsImV4cCI6MTc3MjU1NDM3MCwiaWF0IjoxNTgzMjUxOTcwfQ.OETc-w4A2NGY_CzLcsgVDK8Rps6U-om3NLzQm4t-2Kk&num=5&communityId=")
+}
+// 烘焙圈->最新->动态
+export const getZuiXinDongTai = ()=>{
+    return axios.get("/hpb/v2/feed/getNew?_t=1583510576039&csrfToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOjAsImV4cCI6MTc3MjU1NDM3MCwiaWF0IjoxNTgzMjUxOTcwfQ.OETc-w4A2NGY_CzLcsgVDK8Rps6U-om3NLzQm4t-2Kk&pageIndex=1&pageSize=50")
+}
 
+// 问答->精华问题
+export const getEssence = ()=>{
+    return axios.get("/hpb/question/getEssence?_t=1583570121420&csrfToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOjAsImV4cCI6MTc3MjU1NDM3MCwiaWF0IjoxNTgzMjUxOTcwfQ.OETc-w4A2NGY_CzLcsgVDK8Rps6U-om3NLzQm4t-2Kk&pageIndex=0&pageSize=10")
+}
+// 问答->最新问题
+export const getNew = ()=>{
+    return axios.get("/hpb/question/getNew?_t=1583570075375&csrfToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOjAsImV4cCI6MTc3MjU1NDM3MCwiaWF0IjoxNTgzMjUxOTcwfQ.OETc-w4A2NGY_CzLcsgVDK8Rps6U-om3NLzQm4t-2Kk&pageIndex=0&pageSize=10")
+}
+// 问答->最热问题
+export const getHot = ()=>{
+    return axios.get("/hpb/question/getHot?_t=1583570133019&csrfToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOjAsImV4cCI6MTc3MjU1NDM3MCwiaWF0IjoxNTgzMjUxOTcwfQ.OETc-w4A2NGY_CzLcsgVDK8Rps6U-om3NLzQm4t-2Kk&pageIndex=0&pageSize=10")
+}

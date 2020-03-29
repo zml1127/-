@@ -1,0 +1,50 @@
+.tuijian{
+    // padding-top: 0.6rem;
+    margin-top: 0.6rem;
+    width: 3.75rem;
+    .first_swiper{
+        width: 100%;
+        .swiper-container {
+            position: relative;
+            width:3.75rem;
+            overflow: hidden;
+            .swiper-wrapper{
+                box-sizing: border-box;
+                width: 100%;
+                // z-index: -100;
+                white-space:nowrap;
+                .swiper-slide{
+                    // border: 1px solid #333;
+                    display: inline-block;
+                    width: 100%;
+                    background-color: pink;
+                    img{
+                        width: 100%;
+                    }
+                    // height: 2rem;
+                    // font-size: 0.5rem;
+                    // color: purple;
+                }
+            }
+            .swiper-pagination{
+                width: 100% !important;
+                text-align: center;
+                position: absolute;
+                bottom: 0.16rem;
+                .swiper-pagination-bullet{ //分页器
+                    margin: 0 0.05rem 0.02rem;
+                    display: inline-block;
+                    width:0.05rem;
+                    height: 0.05rem;
+                    border-radius: 50%;
+                    background-color: #f0f0f0;
+                }
+                .swiper-pagination-bullet-active{ //正在展示的哪个分页圆点
+                    background-color: powderblue;
+                }
+            }
+            
+            
+        }
+    }
+}

@@ -60,6 +60,7 @@ class Learn extends Component {
                     <FileAddOutlined style={{fontSize:"0.27rem"}}/>
                     <div className="input">
                         <Input 
+                            onClick={()=>{this.props.history.push("/search")}}
                             style={{width:"2.5rem",height:'0.35rem'}}
                             placeholder="搜索食谱/石材，烘培/家常菜一应俱全"
                             prefix={<SearchOutlined className="site-form-item-icon" style={{fontSize:"0.20rem",paddingTop:"0.04rem",paddingRight:"0.1rem"}}/>}

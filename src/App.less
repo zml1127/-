@@ -3,13 +3,22 @@ a{text-decoration: none;}
 li{list-style: none;}
 img{border: none; vertical-align: middle;}
 .clearfix:after{content: "";display: block;height: 0;overflow: hidden;visibility: hidden;clear: both;  }
-html,body{height: 100%;} //
+html,body{height: 100%;}
 html{font-size:26.67vw;}  //26.67vw=100px
 body{font-size: 16px;display: flex; flex-direction: column;line-height: 1;} 
-// section{flex: 1;overflow: auto; }
 
 
 .App {
+  .App-link {
+    color: #999;
+  }
+  
+  .App-active{
+    p{
+      color: red;
+    }
+    color: red;
+  }
   // text-align: center;
   footer{
     z-index: 100;
@@ -21,7 +30,6 @@ body{font-size: 16px;display: flex; flex-direction: column;line-height: 1;}
     display: flex;
     position: fixed;
     bottom: 0;
-    // height: 0.49rem;
    div{
     font-size: 0.12rem;
     width: 25%;
@@ -42,17 +50,7 @@ body{font-size: 16px;display: flex; flex-direction: column;line-height: 1;}
   }
 }
 
-.App-link {
-  color: #999;
-}
 
-.App-active{
-  p{
-    color: red !important;
-  }
-  color: red !important;
-  // background-color: pink;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
